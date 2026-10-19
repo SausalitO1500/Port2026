@@ -831,6 +831,10 @@ body.side-nav-theme-light #side-nav .side-nav__link.is-active .side-nav__label {
 .accent-coral { color: var(--coral); }
 .accent-blue { color: var(--blue); }
 
+/* Hero headline accents — desktop, tablet, and mobile share these spans. */
+.hero .accent-coral { color: #f7525b; }
+.hero .accent-blue { color: #4f8aff; }
+
 /* ---------- Work — 900px brand-colored projects ---------- */
 
 .work {
