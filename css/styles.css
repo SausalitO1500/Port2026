@@ -5459,6 +5459,20 @@ body.side-nav-theme-light #side-nav .side-nav__link.is-active .side-nav__label {
   }
 }
 
+/* Mobile case studies — keep the canvas under the footer the same green
+   so the page doesn’t end on the white body color. */
+@media (max-width: 720px) {
+  html:has(body.case-study),
+  body.case-study {
+    background-color: #012622;
+  }
+
+  body.case-study .site-footer {
+    background-color: #012622;
+    padding-bottom: calc(40px + env(safe-area-inset-bottom, 0px));
+  }
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .cs-hero__copy,
   .cs-detail,
