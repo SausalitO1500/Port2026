@@ -773,7 +773,7 @@ body.side-nav-theme-light #side-nav .side-nav__link.is-active .side-nav__label {
   display: flex;
   align-items: flex-start;
   padding: var(--header-h) 0 200px;
-  background: #365c3d;
+  background: var(--navy);
   color: var(--cream);
 }
 
