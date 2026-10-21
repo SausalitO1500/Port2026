@@ -8,6 +8,9 @@
       name="description"
       content="I'm a product designer with 10+ years of experience shaping product direction, connecting business and human needs, and bringing ideas to life."
     />
+    <link rel="icon" href="/Favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/Favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/home.css" />
   </head>
@@ -279,13 +282,22 @@
 
     <footer class="home-footer" id="contact">
       <div class="home-footer__main">
-        <img
-          class="home-footer__logo"
-          src="assets/Logos/drt-logo-footer.svg"
-          alt="Daniela Ramirez Torres."
-          width="805"
-          height="488"
-        />
+        <div class="home-footer__brand">
+          <img
+            class="home-footer__logo"
+            src="assets/Logos/drt-logo-footer.svg"
+            alt="Daniela Ramirez Torres."
+            width="805"
+            height="488"
+          />
+          <img
+            class="home-footer__logo home-footer__logo--mobile"
+            src="assets/home/footer-wordmark-mobile.svg"
+            alt="Daniela Ramirez Torres."
+            width="351"
+            height="220"
+          />
+        </div>
         <nav class="home-footer__col" aria-label="Explore">
           <p class="home-footer__label">Explore</p>
           <a href="#top">Overview</a>
@@ -312,7 +324,7 @@
         <img src="assets/home/divider-footer.svg" alt="" width="1440" height="1" />
       </div>
       <div class="home-footer__base">
-        <p>© 2026 | Daniela Ramirez Torres. All rights reserved.</p>
+        <p>© 2026 | Daniela Ramirez Torres. <br class="home-footer__legal-break" />All rights reserved.</p>
         <p>Designed with intention.</p>
       </div>
     </footer>

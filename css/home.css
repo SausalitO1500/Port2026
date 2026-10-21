@@ -586,11 +586,20 @@ body.home .home-principle h3 {
   align-items: start;
 }
 
+.home-footer__brand {
+  display: contents;
+}
+
 .home-footer__logo {
   width: 629px;
   height: auto;
   max-width: none;
   grid-column: 1;
+}
+
+.home-footer__logo--mobile,
+.home-footer__legal-break {
+  display: none;
 }
 
 .home-footer__col {
@@ -888,5 +897,93 @@ body.home .home-principle h3 {
   .home-hero h1 {
     font-size: 36px;
     line-height: 42px;
+  }
+}
+
+/* Mobile footer — Figma node 804:971, 393px. Desktop footer is unchanged. */
+@media (max-width: 480px) {
+  .home-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 26px 24px calc(32px + env(safe-area-inset-bottom, 0px));
+  }
+
+  .home-footer__main,
+  .home-footer__brand {
+    display: contents;
+  }
+
+  .home-footer__logo {
+    display: none;
+  }
+
+  .home-footer__logo--mobile {
+    display: block;
+    order: 3;
+    width: calc(100% + 6px);
+    height: auto;
+    max-width: none;
+    min-width: 0;
+    margin: 16px 0 0 -2px;
+    grid-column: auto;
+  }
+
+  .home-footer__col {
+    gap: 0;
+    width: auto;
+  }
+
+  .home-footer__col:nth-child(2) {
+    order: 1;
+  }
+
+  .home-footer__col:nth-child(3) {
+    order: 2;
+    margin-top: 16px;
+  }
+
+  .home-footer__col a,
+  .home-footer__mail {
+    line-height: 32px;
+    white-space: nowrap;
+  }
+
+  .home-footer__rule {
+    order: 4;
+    width: calc(100% + 48px);
+    height: 1px;
+    margin: 1px -24px 0;
+  }
+
+  .home-footer__base {
+    order: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    width: 100%;
+    margin: 0;
+    padding: 16px 0 0;
+  }
+
+  .home-footer__base p {
+    font-size: 16px;
+  }
+
+  .home-footer__base p:first-child {
+    order: 2;
+    max-width: 285px;
+    line-height: 24px;
+  }
+
+  .home-footer__base p:last-child {
+    order: 1;
+    line-height: 26px;
+    text-align: left;
+  }
+
+  .home-footer__legal-break {
+    display: block;
   }
 }

@@ -8,45 +8,26 @@
       name="description"
       content="Designing Visa’s first enterprise agent marketplace — a case study by Daniela Ramirez Torres."
     />
+    <link rel="icon" href="/Favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/Favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body class="case-study case-study--agent">
     <a class="skip-link" href="#main">Skip to content</a>
 
-    <header class="cs-header">
-      <div class="shell">
-        <a class="brand" href="index.html" aria-label="Daniela Ramirez Torres — Home">
-          <img
-            class="brand__logo"
-            src="assets/Logos/drt-logo-navy.svg"
-            alt="Daniela Ramirez Torres"
-            width="105"
-            height="78"
-          />
+    <header class="cs-nav">
+      <div class="cs-nav__bar">
+        <a class="cs-nav__logo" href="index.html" aria-label="Daniela Ramirez Torres — Home">
+          <img src="assets/case-studies/chrome/nav-logo.svg" alt="" width="105" height="77" />
         </a>
-        <a
-          class="btn btn--contact"
-          href="mailto:hello@danielarmzt.design"
-          aria-label="Email Daniela"
-        >
-          <svg
-            class="btn--contact__icon"
-            width="20"
-            height="16"
-            viewBox="0 0 20 16"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true"
-          >
-            <path
-              d="M2 2L8.10764 6.61227L8.10967 6.61396C8.78785 7.11129 9.12714 7.3601 9.49876 7.45622C9.82723 7.54117 10.1725 7.54117 10.501 7.45622C10.8729 7.36001 11.2132 7.11047 11.8926 6.61227C11.8926 6.61227 15.8101 3.60594 18 2M1 11.8002V4.2002C1 3.08009 1 2.51962 1.21799 2.0918C1.40974 1.71547 1.71547 1.40974 2.0918 1.21799C2.51962 1 3.08009 1 4.2002 1H15.8002C16.9203 1 17.4796 1 17.9074 1.21799C18.2837 1.40974 18.5905 1.71547 18.7822 2.0918C19 2.5192 19 3.079 19 4.19691V11.8036C19 12.9215 19 13.4805 18.7822 13.9079C18.5905 14.2842 18.2837 14.5905 17.9074 14.7822C17.48 15 16.921 15 15.8031 15H4.19691C3.079 15 2.5192 15 2.0918 14.7822C1.71547 14.5905 1.40974 14.2842 1.21799 13.9079C1 13.4801 1 12.9203 1 11.8002Z"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-        </a>
+        <button type="button" class="cs-nav__mail" data-copy-email="hello@danielarmzt.design" aria-label="Copy hello@danielarmzt.design">
+          <span class="cs-mail__text">
+            <span class="cs-mail__label">hello@danielarmzt.design</span>
+            <span class="cs-mail__status" aria-live="polite"></span>
+          </span>
+          <img src="assets/case-studies/chrome/arrow-up-right-navy.svg" alt="" width="24" height="24" />
+        </button>
       </div>
     </header>
 
@@ -270,28 +251,102 @@
       </section>
     </main>
 
-    <footer class="site-footer">
-      <div class="footer__layout">
-        <div class="brand brand--footer-logo" aria-hidden="true">
+    <footer class="cs-footer">
+      <div class="cs-footer__main">
+        <div class="cs-footer__brand">
           <img
-            class="brand__logo brand__logo--footer"
-            src="assets/Logos/drt-logo-footer.svg"
-            alt=""
-            width="804"
-            height="471"
+            class="cs-footer__logo"
+            src="assets/case-studies/chrome/footer-wordmark.svg"
+            alt="Daniela Ramirez Torres."
+            width="629"
+            height="383"
+          />
+          <img
+            class="cs-footer__logo cs-footer__logo--mobile"
+            src="assets/home/footer-wordmark-mobile.svg"
+            alt="Daniela Ramirez Torres."
+            width="351"
+            height="220"
           />
         </div>
-        <div class="footer__contact">
-          <p class="footer__cta">Get in touch</p>
-          <a class="footer__email" href="mailto:hello@danielarmzt.design"
-            >hello@danielarmzt.design</a
-          >
-          <p class="footer__legal">
-            © 2026 | Daniela Ramirez Torres.<br />
-            All rights reserved.
-          </p>
+        <nav class="cs-footer__col" aria-label="Explore">
+          <p class="cs-footer__label">Explore</p>
+          <a href="index.html#top">Overview</a>
+          <a href="index.html#work">Selected work</a>
+          <a href="index.html#guides">What guides my work</a>
+          <a href="index.html#about">About</a>
+        </nav>
+        <div class="cs-footer__col">
+          <p class="cs-footer__label">Get in touch</p>
+          <a href="https://www.linkedin.com/in/daniela-ramirezt" target="_blank" rel="noopener noreferrer">
+            LinkedIn
+            <img src="assets/home/arrow-up-right.svg" alt="" width="24" height="24" />
+          </a>
+          <button type="button" class="cs-footer__mail" data-copy-email="hello@danielarmzt.design" aria-label="Copy hello@danielarmzt.design">
+            <span class="cs-mail__text">
+              <span class="cs-mail__label">hello@danielarmzt.design</span>
+              <span class="cs-mail__status" aria-live="polite"></span>
+            </span>
+            <img src="assets/home/arrow-up-right.svg" alt="" width="24" height="24" />
+          </button>
         </div>
       </div>
+      <div class="cs-footer__rule">
+        <img src="assets/home/divider-footer.svg" alt="" width="1440" height="1" />
+      </div>
+      <div class="cs-footer__base">
+        <p>© 2026 | Daniela Ramirez Torres. <br class="cs-footer__legal-break" />All rights reserved.</p>
+        <p>Designed with intention.</p>
+      </div>
     </footer>
+    <script>
+      (function () {
+        document.querySelectorAll("[data-copy-email]").forEach(function (button) {
+          var status = button.querySelector(".cs-mail__status");
+          var address = button.getAttribute("data-copy-email");
+          var timer;
+
+          function showCopied() {
+            button.classList.add("is-copied");
+            if (status) status.textContent = "Copied!";
+            window.clearTimeout(timer);
+            timer = window.setTimeout(function () {
+              button.classList.remove("is-copied");
+              if (status) status.textContent = "";
+            }, 2000);
+          }
+
+          function copyWithFallback() {
+            var input = document.createElement("textarea");
+            input.value = address;
+            input.setAttribute("readonly", "");
+            input.style.position = "fixed";
+            input.style.top = "0";
+            input.style.left = "0";
+            input.style.opacity = "0";
+            document.body.appendChild(input);
+            input.focus();
+            input.select();
+            input.setSelectionRange(0, address.length);
+            var copied = false;
+            try {
+              copied = document.execCommand("copy");
+            } catch (error) {
+              copied = false;
+            }
+            document.body.removeChild(input);
+            if (copied) showCopied();
+          }
+
+          button.addEventListener("click", function () {
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+              navigator.clipboard.writeText(address).then(showCopied).catch(copyWithFallback);
+              return;
+            }
+            copyWithFallback();
+          });
+        });
+      })();
+    </script>
   </body>
 </html>

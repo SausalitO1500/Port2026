@@ -35,6 +35,14 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Albert Sans";
+  src: url("../assets/fonts/AlbertSans-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   /* Exact Figma tokens — Home / Intro / Master / Desktop / 1440 */
   --navy: #0b1849;
@@ -2856,6 +2864,226 @@ body.side-nav-theme-light #side-nav .side-nav__link.is-active .side-nav__label {
   color: var(--ink);
 }
 
+/* ---------- Case study navigation + footer (Figma 630:269) ---------- */
+
+.cs-nav {
+  background: #f5f4f0;
+  color: #0b1849;
+  position: relative;
+  z-index: 20;
+}
+
+.cs-nav__bar {
+  width: min(100%, 1440px);
+  height: 184px;
+  margin-inline: auto;
+  padding: 14px 156px 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cs-nav__logo {
+  display: block;
+  line-height: 0;
+  flex-shrink: 0;
+}
+
+.cs-nav__logo img {
+  width: 104.57px;
+  height: 77.09px;
+  max-width: none;
+}
+
+.cs-nav__mail,
+.cs-footer__mail {
+  display: inline-flex;
+  align-items: center;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+  text-align: left;
+}
+
+.cs-nav__mail {
+  height: 24px;
+  color: #0b1849;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 24px;
+  font-variation-settings: "opsz" 14, "wght" 900;
+  white-space: nowrap;
+}
+
+.cs-mail__text {
+  display: inline-grid;
+  justify-items: start;
+  text-align: left;
+}
+
+.cs-mail__label,
+.cs-mail__status {
+  grid-area: 1 / 1;
+  justify-self: start;
+  text-align: left;
+}
+
+.cs-mail__status {
+  opacity: 0;
+}
+
+.cs-nav__mail.is-copied .cs-mail__label,
+.cs-footer__mail.is-copied .cs-mail__label {
+  opacity: 0;
+}
+
+.cs-nav__mail.is-copied .cs-mail__status,
+.cs-footer__mail.is-copied .cs-mail__status {
+  opacity: 1;
+}
+
+.cs-nav__mail.is-copied img,
+.cs-footer__mail.is-copied img {
+  visibility: hidden;
+}
+
+.cs-nav__mail:hover,
+.cs-footer__col a:hover,
+.cs-footer__mail:hover {
+  opacity: 0.72;
+}
+
+.cs-nav__mail img,
+.cs-footer__mail img,
+.cs-footer__col a img {
+  width: 24px;
+  height: 24px;
+  max-width: none;
+  flex-shrink: 0;
+}
+
+.cs-nav a:focus-visible,
+.cs-nav button:focus-visible,
+.cs-footer a:focus-visible,
+.cs-footer button:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
+
+.cs-footer {
+  background: #0b1849;
+  color: #ffffff;
+}
+
+.cs-footer__main,
+.cs-footer__base {
+  width: min(100%, 1440px);
+  margin-inline: auto;
+  box-sizing: border-box;
+}
+
+.cs-footer__main {
+  padding: 110px 106px 0;
+  display: grid;
+  grid-template-columns: 629.137px minmax(0, 1fr) 188px 124px max-content;
+  align-items: start;
+}
+
+.cs-footer__brand {
+  display: contents;
+}
+
+.cs-footer__logo {
+  width: 629.137px;
+  height: 383.3px;
+  max-width: none;
+  grid-column: 1;
+}
+
+.cs-footer__logo--mobile,
+.cs-footer__legal-break {
+  display: none;
+}
+
+.cs-footer__col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.cs-footer__col:nth-child(2) {
+  grid-column: 3;
+}
+
+.cs-footer__col:nth-child(3) {
+  grid-column: 5;
+}
+
+.cs-footer__label {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  color: #a8c5ff;
+  font-variation-settings: "opsz" 14, "wght" 600;
+}
+
+.cs-footer__col a,
+.cs-footer__mail {
+  display: inline-flex;
+  align-items: center;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 32px;
+  font-variation-settings: "opsz" 14, "wght" 400;
+  white-space: nowrap;
+}
+
+.cs-footer__rule {
+  width: 100%;
+  height: 1px;
+  margin-top: -2px;
+}
+
+.cs-footer__rule img {
+  display: block;
+  width: 100%;
+  height: 1px;
+  max-width: none;
+}
+
+.cs-footer__base {
+  padding: 49px 106px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.cs-footer__base p {
+  margin: 0;
+  font-family: "Albert Sans", "DM Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.cs-footer__base p:first-child {
+  color: #a8c5ff;
+}
+
+.cs-footer__base p:last-child {
+  color: #ffffff;
+  text-align: right;
+}
+
 .case-study .site-footer {
   height: 486px;
 }
@@ -5459,17 +5687,163 @@ body.side-nav-theme-light #side-nav .side-nav__link.is-active .side-nav__label {
   }
 }
 
-/* Mobile case studies — keep the canvas under the footer the same green
-   so the page doesn’t end on the white body color. */
-@media (max-width: 720px) {
-  html:has(body.case-study),
-  body.case-study {
-    background-color: #012622;
+/* Case study chrome — stack the desktop nav and footer below 1440. */
+@media (max-width: 1439px) {
+  .cs-nav__bar {
+    height: auto;
+    min-height: 120px;
+    padding: 32px 40px;
   }
 
-  body.case-study .site-footer {
-    background-color: #012622;
-    padding-bottom: calc(40px + env(safe-area-inset-bottom, 0px));
+  .cs-footer__main,
+  .cs-footer__base {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .cs-footer__main {
+    grid-template-columns: minmax(0, 1.4fr) 188px 191px;
+    column-gap: 40px;
+    padding-top: 80px;
+  }
+
+  .cs-footer__logo {
+    width: 100%;
+    height: auto;
+    max-width: 520px;
+  }
+
+  .cs-footer__col:nth-child(2),
+  .cs-footer__col:nth-child(3) {
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .cs-nav__bar {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    min-height: 0;
+    gap: 24px;
+    padding: 24px;
+  }
+
+  .cs-nav__mail {
+    white-space: normal;
+  }
+
+  .cs-footer__main,
+  .cs-footer__base {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .cs-footer__main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+  .cs-footer__base {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding-bottom: calc(49px + env(safe-area-inset-bottom, 0px));
+  }
+
+  .cs-footer__base p:last-child {
+    text-align: left;
+  }
+}
+
+/* Mobile footer — Figma node 804:971, 393px. Desktop footer is unchanged. */
+@media (max-width: 480px) {
+  .cs-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 26px 24px calc(32px + env(safe-area-inset-bottom, 0px));
+  }
+
+  .cs-footer__main,
+  .cs-footer__brand {
+    display: contents;
+  }
+
+  .cs-footer__logo {
+    display: none;
+  }
+
+  .cs-footer__logo--mobile {
+    display: block;
+    order: 3;
+    width: calc(100% + 6px);
+    height: auto;
+    max-width: none;
+    min-width: 0;
+    margin: 16px 0 0 -2px;
+    grid-column: auto;
+  }
+
+  .cs-footer__col {
+    gap: 0;
+    width: auto;
+  }
+
+  .cs-footer__col:nth-child(2) {
+    order: 1;
+  }
+
+  .cs-footer__col:nth-child(3) {
+    order: 2;
+    margin-top: 16px;
+  }
+
+  .cs-footer__col a,
+  .cs-footer__mail {
+    line-height: 32px;
+    white-space: nowrap;
+  }
+
+  .cs-footer__rule {
+    order: 4;
+    width: calc(100% + 48px);
+    height: 1px;
+    margin: 1px -24px 0;
+  }
+
+  .cs-footer__base {
+    order: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 8px;
+    width: 100%;
+    margin: 0;
+    padding: 16px 0 0;
+  }
+
+  .cs-footer__base p {
+    font-size: 16px;
+  }
+
+  .cs-footer__base p:first-child {
+    order: 2;
+    max-width: 285px;
+    line-height: 24px;
+  }
+
+  .cs-footer__base p:last-child {
+    order: 1;
+    line-height: 26px;
+    text-align: left;
+  }
+
+  .cs-footer__legal-break {
+    display: block;
   }
 }
 
