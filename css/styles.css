@@ -104,6 +104,8 @@
 
 html {
   scroll-behavior: smooth;
+  /* Canvas color past the footer, including overscroll and the home-indicator band. */
+  background-color: #0b1849;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -2976,6 +2978,7 @@ body.side-nav-theme-light #side-nav .side-nav__link.is-active .side-nav__label {
 .cs-footer {
   background: #0b1849;
   color: #ffffff;
+  padding-bottom: env(safe-area-inset-bottom, 0px);
 }
 
 .cs-footer__main,

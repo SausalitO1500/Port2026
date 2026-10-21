@@ -577,6 +577,7 @@ body.home .home-principle h3 {
 .home-footer {
   background: #0b1849;
   color: #ffffff;
+  padding-bottom: env(safe-area-inset-bottom, 0px);
 }
 
 .home-footer__main {
