@@ -2862,8 +2862,12 @@ body.side-nav-theme-light #side-nav .side-nav__link.is-active .side-nav__label {
    ========================================================= */
 
 .case-study {
-  background: var(--paper);
+  background: #0b1849;
   color: var(--ink);
+}
+
+.case-study main {
+  background: var(--paper);
 }
 
 /* ---------- Case study navigation + footer (Figma 630:269) ---------- */
@@ -5847,6 +5851,17 @@ body.side-nav-theme-light #side-nav .side-nav__link.is-active .side-nav__label {
 
   .cs-footer__legal-break {
     display: block;
+  }
+
+  .cs-footer::after {
+    content: "";
+    order: 6;
+    flex: 0 0 120px;
+    width: 100%;
+    height: 120px;
+    margin: 0 0 -120px;
+    background: #0b1849;
+    pointer-events: none;
   }
 }
 
