@@ -6,439 +6,364 @@
     <title>Daniela Ramirez Torres — Product Designer</title>
     <meta
       name="description"
-      content="I believe in making the most of our time, bringing good people and bold ideas together to create something worthwhile. Come see for yourself."
+      content="I'm a product designer with 10+ years of experience shaping product direction, connecting business and human needs, and bringing ideas to life."
     />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/home.css" />
   </head>
-  <body>
+  <body class="home">
     <a class="skip-link" href="#main">Skip to content</a>
 
-    <nav class="side-nav" id="side-nav" aria-label="Page sections">
-      <ul class="side-nav__list">
-        <li class="side-nav__item">
-          <a class="side-nav__link is-active" href="#hero" data-section="hero" aria-current="location">
-            <span class="side-nav__indicator" aria-hidden="true"></span>
-            <span class="side-nav__label">Overview</span>
-          </a>
-        </li>
-        <li class="side-nav__item">
-          <a class="side-nav__link" href="#agent-marketplace" data-section="agent-marketplace">
-            <span class="side-nav__indicator" aria-hidden="true"></span>
-            <span class="side-nav__label">Agent marketplace</span>
-          </a>
-        </li>
-        <li class="side-nav__item">
-          <a class="side-nav__link" href="#subscriptions" data-section="subscriptions">
-            <span class="side-nav__indicator" aria-hidden="true"></span>
-            <span class="side-nav__label">Subscriptions</span>
-          </a>
-        </li>
-        <li class="side-nav__item">
-          <a class="side-nav__link" href="#loyalty" data-section="loyalty">
-            <span class="side-nav__indicator" aria-hidden="true"></span>
-            <span class="side-nav__label">Loyalty</span>
-          </a>
-        </li>
-        <li class="side-nav__item">
-          <a class="side-nav__link" href="#guides" data-section="guides">
-            <span class="side-nav__indicator" aria-hidden="true"></span>
-            <span class="side-nav__label">Skills I bring</span>
-          </a>
-        </li>
-        <li class="side-nav__item">
-          <a class="side-nav__link" href="#about" data-section="about">
-            <span class="side-nav__indicator" aria-hidden="true"></span>
-            <span class="side-nav__label">About</span>
-          </a>
-        </li>
-        <li class="side-nav__item">
-          <a class="side-nav__link" href="#contact" data-section="contact">
-            <span class="side-nav__indicator" aria-hidden="true"></span>
-            <span class="side-nav__label">Contact</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
-
-    <nav class="mobile-nav" id="mobile-nav" aria-label="Page sections">
-      <button
-        type="button"
-        class="mobile-nav__backdrop"
-        tabindex="-1"
-        aria-hidden="true"
-        data-mobile-nav-close
-      ></button>
-      <div class="mobile-nav__dock">
-        <div class="mobile-nav__panel" id="mobile-nav-panel">
-          <div class="mobile-nav__panel-inner">
-            <ul class="side-nav__list mobile-nav__list">
-              <li class="side-nav__item">
-                <a class="side-nav__link is-active" href="#hero" data-section="hero" aria-current="location">
-                  <span class="side-nav__indicator" aria-hidden="true"></span>
-                  <span class="side-nav__label">Overview</span>
-                </a>
-              </li>
-              <li class="side-nav__item">
-                <a class="side-nav__link" href="#agent-marketplace" data-section="agent-marketplace">
-                  <span class="side-nav__indicator" aria-hidden="true"></span>
-                  <span class="side-nav__label">Agent marketplace</span>
-                </a>
-              </li>
-              <li class="side-nav__item">
-                <a class="side-nav__link" href="#subscriptions" data-section="subscriptions">
-                  <span class="side-nav__indicator" aria-hidden="true"></span>
-                  <span class="side-nav__label">Subscriptions</span>
-                </a>
-              </li>
-              <li class="side-nav__item">
-                <a class="side-nav__link" href="#loyalty" data-section="loyalty">
-                  <span class="side-nav__indicator" aria-hidden="true"></span>
-                  <span class="side-nav__label">Loyalty</span>
-                </a>
-              </li>
-              <li class="side-nav__item">
-                <a class="side-nav__link" href="#guides" data-section="guides">
-                  <span class="side-nav__indicator" aria-hidden="true"></span>
-                  <span class="side-nav__label">Skills I bring</span>
-                </a>
-              </li>
-              <li class="side-nav__item">
-                <a class="side-nav__link" href="#about" data-section="about">
-                  <span class="side-nav__indicator" aria-hidden="true"></span>
-                  <span class="side-nav__label">About</span>
-                </a>
-              </li>
-              <li class="side-nav__item">
-                <a class="side-nav__link" href="#contact" data-section="contact">
-                  <span class="side-nav__indicator" aria-hidden="true"></span>
-                  <span class="side-nav__label">Contact</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <button
-          type="button"
-          class="mobile-nav__toggle"
-          aria-expanded="false"
-          aria-controls="mobile-nav-panel"
-        >
-          <span class="mobile-nav__current" data-mobile-nav-current>Overview</span>
-        </button>
-      </div>
-    </nav>
-
-    <header class="site-header">
-      <div class="shell">
-        <a class="brand" href="#hero" aria-label="Daniela Ramirez Torres">
-          <img
-            class="brand__logo"
-            src="assets/Logos/drt-logo.svg"
-            alt="Daniela Ramirez Torres"
-            width="105"
-            height="78"
-          />
+    <header class="home-nav" id="top">
+      <div class="home-nav__bar">
+        <a class="home-nav__logo" href="#hero" aria-label="Daniela Ramirez Torres">
+          <img src="assets/home/logo-drt.svg" alt="" width="105" height="78" />
         </a>
-
-        <div class="header-meta">
-          <a
-            class="meta-link"
-            href="https://www.linkedin.com/in/daniela-ramirezt"
-            target="_blank"
-            rel="noopener noreferrer"
-            >LinkedIn</a
-          >
-          <a class="btn btn--icon" href="mailto:hello@danielarmzt.design" aria-label="Email Daniela">
-            <svg
-              class="btn--icon__icon"
-              width="20"
-              height="16"
-              viewBox="0 0 20 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-            >
-              <path
-                d="M2 2L8.10764 6.61227L8.10967 6.61396C8.78785 7.11129 9.12714 7.3601 9.49876 7.45622C9.82723 7.54117 10.1725 7.54117 10.501 7.45622C10.8729 7.36001 11.2132 7.11047 11.8926 6.61227C11.8926 6.61227 15.8101 3.60594 18 2M1 11.8002V4.2002C1 3.08009 1 2.51962 1.21799 2.0918C1.40974 1.71547 1.71547 1.40974 2.0918 1.21799C2.51962 1 3.08009 1 4.2002 1H15.8002C16.9203 1 17.4796 1 17.9074 1.21799C18.2837 1.40974 18.5905 1.71547 18.7822 2.0918C19 2.5192 19 3.079 19 4.19691V11.8036C19 12.9215 19 13.4805 18.7822 13.9079C18.5905 14.2842 18.2837 14.5905 17.9074 14.7822C17.48 15 16.921 15 15.8031 15H4.19691C3.079 15 2.5192 15 2.0918 14.7822C1.71547 14.5905 1.40974 14.2842 1.21799 13.9079C1 13.4801 1 12.9203 1 11.8002Z"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </a>
-        </div>
+        <nav class="home-nav__links" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#work">Work</a>
+          <a href="https://www.linkedin.com/in/daniela-ramirezt" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <button type="button" class="home-nav__mail" data-copy-email="hello@danielarmzt.design" aria-label="Copy hello@danielarmzt.design">
+            <span class="home-nav__mail-text">
+              <span class="home-nav__mail-label">hello@danielarmzt.design</span>
+              <span class="home-nav__mail-status" aria-live="polite"></span>
+            </span>
+            <img src="assets/home/arrow-up-right.svg" alt="" width="24" height="24" />
+          </button>
+        </nav>
       </div>
     </header>
 
     <main id="main">
-      <section class="hero" id="hero" data-section-panel>
-        <div class="shell">
-          <div class="grid-12">
-            <div class="hero__inner">
-              <h1 class="hero__headline">
-                <span class="hero__desktop">
-                  I care about what design
-                  <span class="accent-orange">changes for people</span>, and I know how to turn
-                  <span class="accent-coral">complex ideas</span> into products that are
-                  <span class="accent-blue">real, useful, and scalable</span>.
-                </span>
-                <span class="hero__mobile">
-                  I care about what design
-                  <span class="accent-orange">changes for people</span>, and I know how to turn
-                  <span class="accent-coral">complex ideas</span> into products that are
-                  <span class="accent-blue">real, useful, and scalable</span>.
-                </span>
-              </h1>
-              <p class="hero__lede">
-                <span class="hero__lede-desktop"
-                  >I believe in making the most of our time, bringing good people and bold<br />
-                  ideas together to create something worthwhile. Come see for yourself.</span
-                >
-                <span class="hero__lede-tablet"
-                  >I’m a product designer and strategist turning ambitious ideas into tangible
-                  products teams can build and leaders can confidently invest in.</span
-                >
-                <span class="hero__lede-mobile"
-                  >I believe in making the most of our time, bringing good people and bold ideas
-                  together to create something worthwhile. Come see for yourself.</span
-                >
+      <section class="home-hero" id="hero">
+        <div class="home-hero__inner">
+          <h1>
+            I care about what design changes for people, and I know how to turn complex ideas into products that are real, useful, and scalable.
+          </h1>
+          <p>
+            I'm a product designer with 10+ years of experience shaping product direction,<br class="home-br" />
+            connecting business and human needs, and bringing ideas to life.
+          </p>
+        </div>
+      </section>
+
+      <section class="home-work" id="work">
+        <div class="home-work__inner">
+          <h2 class="home-kicker">Selected work</h2>
+          <div class="home-work__grid">
+            <article class="home-project">
+              <div class="home-project__media home-project__media--agent">
+                <img
+                  src="assets/home/project-agent.png"
+                  alt="Visa agent marketplace interface"
+                  width="4096"
+                  height="2913"
+                />
+              </div>
+              <p class="home-project__meta">Visa / Product&nbsp;Design · AI</p>
+              <h3>Designing Visa’s first enterprise agent marketplace</h3>
+              <p class="home-project__text">
+                Shaped the product model and MVP for<br class="home-br" />
+                an enterprise AI marketplace launched to<br class="home-br" />
+                2,000+ employees in two months.
               </p>
-            </div>
-          </div>
-        </div>
-      </section>
+              <a class="home-project__link" href="agent-marketplace.html">
+                View project
+                <img src="assets/home/arrow-up-right-blue.svg" alt="" width="24" height="24" />
+              </a>
+            </article>
 
-      <section class="work" id="work" data-section-panel>
-        <article class="project project--visa" id="agent-marketplace" data-section-panel>
-          <div class="shell">
-            <div class="project__layout">
-              <div class="project__copy">
-                <img class="project__logo" src="assets/Logos/visa-logo.svg" alt="Visa" width="105" height="34" />
-                <h2>Turning an AI concept into Visa’s first global agent marketplace</h2>
-                <div class="project__body">
-                  <p>
-                    I shaped the product model, MVP, and research-backed changes that helped employees discover, use, and create agents within a two-month launch window.
-                  </p>
-                  <p class="project__tags">Product design · Product strategy · AI · Research</p>
-                </div>
-                <a class="btn btn--primary" href="agent-marketplace.html">Learn More</a>
-              </div>
-              <div class="project__media project__media--bleed">
-                <div class="mockup mockup--desktop mockup--bleed">
-                  <img src="assets/images/project-visa.png" alt="Visa Agent Marketplace product interface" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <article class="project project--pnc" id="subscriptions" data-section-panel>
-          <div class="shell">
-            <div class="project__layout">
-              <div class="project__copy">
-                <img class="project__logo project__logo--pnc" src="assets/Logos/PNC-logo.svg" alt="PNC" width="128" height="38" />
-                <h2>Making recurring spending easier to see, understand, and manage</h2>
-                <div class="project__body">
-                  <p>
-                    I led the experience from an open brief to a tested MVP that helped customers track recurring expenses, manage payments, and take action with more confidence.
-                  </p>
-                  <p class="project__tags">Product design · Product strategy · Research</p>
-                </div>
-                <a class="btn btn--primary" href="subscription-manager.html">Learn More</a>
-              </div>
-              <div class="project__media">
-                <div class="mockup mockup--phone">
-                  <img src="assets/images/project-pnc.png" alt="PNC Subscriptions mobile experience" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <article class="project project--kohls" id="loyalty" data-section-panel>
-          <div class="shell">
-            <div class="project__layout">
-              <div class="project__copy">
-                <img class="project__logo project__logo--kohls" src="assets/Logos/Kohls-logo.svg" alt="Kohl's" width="159" height="24" />
-                <h2>Making Kohl’s loyalty easier to understand, use, and return to</h2>
-                <div class="project__body">
-                  <p>
-                    I identified the confusion across Kohl’s loyalty programs and turned a broad engagement brief into a future-state direction for clearer rewards, onboarding, and personalized engagement.
-                  </p>
-                  <p class="project__tags">Product design · Design strategy · Loyalty · Retail</p>
-                </div>
-                <a class="btn btn--primary" href="loyalty.html">Learn More</a>
-              </div>
-              <div class="project__media">
-                <div class="mockup mockup--phone mockup--crop">
-                  <img src="assets/images/project-kohls.png" alt="Kohl's loyalty mobile experience" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </article>
-      </section>
-
-      <section class="guides" id="guides" data-section-panel>
-        <div class="shell">
-          <h2 class="guides__heading">What guides my work</h2>
-        </div>
-
-        <div class="principle principle--direction" id="direction" data-section-panel>
-          <div class="shell">
-            <div class="principle__row">
-              <div class="principle__main">
-                <div class="principle__heading-group">
-                  <div class="principle__label">
-                    <img
-                      class="principle__icon"
-                      src="assets/illustrations/colibri-01.png"
-                      alt=""
-                      width="100"
-                      height="100"
-                    />
-                    <p class="principle__eyebrow">/01 Find the direction</p>
-                  </div>
-                  <h2>I turn uncertainty into a clear product direction</h2>
-                </div>
-                <p>
-                  I look at the problem, the evidence behind it, the outcome we need, and where the greatest opportunity lies. Then I turn that complexity into a clear plan for what matters most and what should happen next.
-                </p>
-              </div>
-              <aside class="principle__skills">
-                <h3>Skills I bring</h3>
-                <ol>
-                  <li><span>/01</span> Problem framing</li>
-                  <li><span>/02</span> Evidence synthesis</li>
-                  <li><span>/03</span> Product judgement</li>
-                  <li><span>/04</span> Opportunity framing</li>
-                  <li><span>/05</span> Prioritization</li>
-                </ol>
-              </aside>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="principle principle--shaping principle--alt" id="shaping" data-section-panel>
-        <div class="shell">
-          <div class="principle__row">
-            <div class="principle__main">
-              <div class="principle__heading-group">
-                <div class="principle__label">
+            <article class="home-project">
+              <div class="home-project__media home-project__media--phones">
+                <div class="home-phone home-phone--sub-a">
                   <img
-                    class="principle__icon principle__icon--mariposa"
-                    src="assets/illustrations/mariposa-01.png"
-                    alt=""
-                    width="100"
-                    height="100"
+                    src="assets/home/subscription-year.png"
+                    alt="Subscription manager year view on a phone"
+                    width="1179"
+                    height="3774"
                   />
-                  <p class="principle__eyebrow">/02 Shape the product</p>
                 </div>
-                <h2>I design products that evolve as people’s needs change</h2>
+                <div class="home-phone home-phone--sub-b">
+                  <img
+                    src="assets/home/subscription-detail.png"
+                    alt=""
+                    width="1179"
+                    height="3904"
+                  />
+                </div>
               </div>
-              <p>
+              <p class="home-project__meta">PNC / Product&nbsp;Design · Consumer banking</p>
+              <h3>Helping customers take control of recurring spending</h3>
+              <p class="home-project__text">
+                Designed and tested an experience for viewing, managing, and canceling subscriptions.
+              </p>
+              <a class="home-project__link" href="subscription-manager.html">
+                View project
+                <img src="assets/home/arrow-up-right-blue.svg" alt="" width="24" height="24" />
+              </a>
+            </article>
+
+            <article class="home-project">
+              <div class="home-project__media home-project__media--phones">
+                <div class="home-phone home-phone--loy-a">
+                  <img
+                    src="assets/home/loyalty-detail.png"
+                    alt="Kohl's loyalty reward detail on a phone"
+                    width="1125"
+                    height="2436"
+                  />
+                </div>
+                <div class="home-phone home-phone--loy-b">
+                  <img
+                    src="assets/home/loyalty-personalize.png"
+                    alt=""
+                    width="1125"
+                    height="2436"
+                  />
+                </div>
+              </div>
+              <p class="home-project__meta">kOHL’S/ Design&nbsp;Strategy · Loyalty</p>
+              <h3>Reimagining the in-app loyalty experience</h3>
+              <p class="home-project__text">
+                Turned a broad engagement brief into a prioritized roadmap and future-state concepts.
+              </p>
+              <a class="home-project__link" href="loyalty.html">
+                View project
+                <img src="assets/home/arrow-up-right-blue.svg" alt="" width="24" height="24" />
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="home-guides" id="guides">
+        <div class="home-guides__inner">
+          <h2 class="home-kicker">What guides my work</h2>
+          <div class="home-guides__list">
+            <article class="home-principle">
+              <p class="home-principle__index">/01&nbsp;&nbsp;Find the direction</p>
+              <img class="home-principle__rule" src="assets/home/divider-rule.svg" alt="" width="701" height="1" />
+              <h3>I turn uncertainty into a clear product direction</h3>
+              <p class="home-principle__body">
+                I look at the problem, the evidence behind it, the outcome we need, and where the greatest opportunity lies. Then I turn that complexity into a clear plan for what matters most and what should happen next.
+              </p>
+              <ul class="home-chips">
+                <li class="home-chip" style="--chip-w: 140px">User research</li>
+                <li class="home-chip" style="--chip-w: 175px">Research synthesis</li>
+                <li class="home-chip" style="--chip-w: 164px">Journey mapping</li>
+                <li class="home-chip" style="--chip-w: 158px">Product strategy</li>
+                <li class="home-chip" style="--chip-w: 180px">Experience strategy</li>
+              </ul>
+            </article>
+
+            <article class="home-principle">
+              <p class="home-principle__index">/02 Shape the product</p>
+              <img class="home-principle__rule" src="assets/home/divider-rule.svg" alt="" width="701" height="1" />
+              <h3>I design products that evolve as people’s needs change</h3>
+              <p class="home-principle__body">
                 I design for the need in front of us without trapping the product there. I consider how behaviors, expectations, and the market are changing so the product can grow while staying useful to the people it serves.
               </p>
-            </div>
-            <aside class="principle__skills">
-              <h3>Skills I bring</h3>
-              <ol>
-                <li><span>/01</span> Future-state thinking</li>
-                <li><span>/02</span> Behavioral insight</li>
-                <li><span>/03</span> Experience strategy</li>
-                <li><span>/04</span> Scalable design</li>
-                <li><span>/05</span> Product evolution</li>
-              </ol>
-            </aside>
-          </div>
-        </div>
-      </section>
+              <ul class="home-chips">
+                <li class="home-chip" style="--chip-w: 171px">Interaction design</li>
+                <li class="home-chip" style="--chip-w: 103px">UI design</li>
+                <li class="home-chip" style="--chip-w: 119px">Prototyping</li>
+                <li class="home-chip" style="--chip-w: 210px">Experience architecture</li>
+                <li class="home-chip" style="--chip-w: 150px">Design Systems</li>
+              </ul>
+            </article>
 
-      <section class="principle principle--conviction" id="conviction" data-section-panel>
-        <div class="shell">
-          <div class="principle__row">
-            <div class="principle__main">
-              <div class="principle__heading-group">
-                <div class="principle__label">
-                  <img
-                    class="principle__icon"
-                    src="assets/illustrations/cattleya-01.png"
-                    alt=""
-                    width="100"
-                    height="100"
-                  />
-                  <p class="principle__eyebrow">/03 Move decisions forward</p>
-                </div>
-                <h2>I make the case with work that builds conviction</h2>
-              </div>
-              <p>
+            <article class="home-principle">
+              <p class="home-principle__index">/03 Move decisions forward</p>
+              <img class="home-principle__rule" src="assets/home/divider-rule.svg" alt="" width="701" height="1" />
+              <h3>I make the case with work that builds conviction</h3>
+              <p class="home-principle__body">
                 I turn research, iteration, and design decisions into work that makes the opportunity tangible. A resolved product experience and clear rationale help leaders see the value, understand the impact, and make confident investment decisions.
               </p>
-            </div>
-            <aside class="principle__skills">
-              <h3>Skills I bring</h3>
-              <ol>
-                <li><span>/01</span> Design rationale</li>
-                <li><span>/02</span> Concept storytelling</li>
-                <li><span>/03</span> Experience definition</li>
-                <li><span>/04</span> Stakeholder influence</li>
-                <li><span>/05</span> Impact framing</li>
-              </ol>
-            </aside>
+              <ul class="home-chips">
+                <li class="home-chip" style="--chip-w: 206px">Concept development</li>
+                <li class="home-chip" style="--chip-w: 153px">Usability testing</li>
+                <li class="home-chip" style="--chip-w: 171px">Design storytelling</li>
+                <li class="home-chip" style="--chip-w: 162px">Product validation</li>
+                <li class="home-chip" style="--chip-w: 158px">Design leadership</li>
+              </ul>
+            </article>
           </div>
         </div>
       </section>
 
-      <section class="about" id="about" data-section-panel>
-        <div class="shell">
-          <div class="about__layout">
-            <div class="about__copy">
-              <h2>I turn complexity into products that make life work better.</h2>
-              <div class="about__body">
-                <p>
-                  Over the past 10 years, I’ve designed products, services, and strategies across financial services, healthcare, entertainment, and more recently enterprise AI.
-                </p>
-                <p>
-                  Today, I work across payments at Visa, bringing product design, research, and strategy together to shape complex product challenges. Before that, I helped define future mobile banking experiences at Citi. My agency years built the foundation for how I still work today: adapt quickly, learn fast, and stay curious in unfamiliar problem spaces.
-                </p>
-                <p>
-                  What comes next is about helping define a new generation of AI-native products that remain deeply human-led. I want to bring together what I’ve learned about people, products, creativity, and rigor to build technology that expands opportunity, improves everyday life, and makes the benefits of AI useful to more people.
-                </p>
+      <section class="home-about" id="about">
+        <div class="home-about__inner">
+          <div class="home-about__copy">
+            <p class="home-kicker home-kicker--light">My experience</p>
+            <h2>I turn complexity into products that make life work better.</h2>
+            <div class="home-about__body">
+              <p>
+                Over the past 10 years, I’ve designed products, services, and strategies across financial services, healthcare, entertainment, and more recently enterprise AI.
+              </p>
+              <p>
+                Today, I work across payments at Visa, bringing product design, research, and strategy together to shape complex product challenges. Before that, I helped define future mobile banking experiences at Citi. My agency years built the foundation for how I still work today: adapt quickly, learn fast, and stay curious in unfamiliar problem spaces.
+              </p>
+              <p>
+                What comes next is about helping define a new generation of AI-native products that remain deeply human-led. I want to bring together what I’ve learned about people, products, creativity, and rigor to build technology that expands opportunity, improves everyday life, and makes the benefits of AI useful to more people.
+              </p>
+            </div>
+          </div>
+          <figure class="home-about__photo">
+            <img
+              src="assets/home/portrait.png"
+              alt="Daniela Ramirez Torres standing beneath purple wisteria"
+              width="3024"
+              height="4032"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section class="home-path" id="path" aria-labelledby="path-heading">
+        <div class="home-path__inner">
+          <div class="home-path__intro">
+            <h2 class="home-kicker home-kicker--light" id="path-heading">The path so far</h2>
+            <p>
+              My career has taken me from making things look good to understanding what makes them work. Each role has expanded how I approach design and the problems I can help solve.
+            </p>
+          </div>
+          <div class="home-path__cols">
+            <div class="home-path__col">
+              <h3>Visa</h3>
+              <div class="home-path__role">
+                <p class="home-path__years">2024 to PRESENT</p>
+                <p class="home-path__title">Design Leader</p>
+              </div>
+              <div class="home-path__role">
+                <p class="home-path__years">2022 to 2024</p>
+                <p class="home-path__title">Senior Design Manager</p>
+              </div>
+              <div class="home-path__role">
+                <p class="home-path__years">2021 to 2022</p>
+                <p class="home-path__title">Staff UX Designer</p>
+              </div>
+              <div class="home-path__role">
+                <p class="home-path__years">2020 to 2021</p>
+                <p class="home-path__title">Senior Experience Designer</p>
               </div>
             </div>
-            <figure class="about__photo">
-              <img src="assets/images/portrait.png" alt="Portrait of Daniela Ramirez Torres" />
-            </figure>
+            <div class="home-path__col">
+              <h3>Citi</h3>
+              <div class="home-path__role">
+                <p class="home-path__years">2019 to 2020</p>
+                <p class="home-path__title">Senior Product Designer</p>
+              </div>
+              <div class="home-path__role">
+                <p class="home-path__years">2017 to 2018</p>
+                <p class="home-path__title">Product Designer</p>
+              </div>
+            </div>
+            <div class="home-path__col">
+              <h3>RPM Agency</h3>
+              <div class="home-path__role">
+                <p class="home-path__years">2017</p>
+                <p class="home-path__title">Experience Designer</p>
+              </div>
+            </div>
+            <div class="home-path__col">
+              <h3>Rapp Agency</h3>
+              <div class="home-path__role">
+                <p class="home-path__years">2015 to 2017</p>
+                <p class="home-path__title">Designer</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer" id="contact" data-section-panel>
-      <div class="footer__layout">
-        <div class="brand brand--footer-logo" aria-hidden="true">
-          <img
-            class="brand__logo brand__logo--footer"
-            src="assets/Logos/drt-logo-footer.svg"
-            alt=""
-            width="804"
-            height="471"
-          />
-        </div>
-
-        <div class="footer__contact">
-          <p class="footer__cta">Get in touch</p>
-          <a class="footer__email" href="mailto:hello@danielarmzt.design">hello@danielarmzt.design</a>
-          <p class="footer__legal">
-            © 2026 | Daniela Ramirez Torres.<br />
-            All rights reserved.
-          </p>
+    <footer class="home-footer" id="contact">
+      <div class="home-footer__main">
+        <img
+          class="home-footer__logo"
+          src="assets/Logos/drt-logo-footer.svg"
+          alt="Daniela Ramirez Torres."
+          width="805"
+          height="488"
+        />
+        <nav class="home-footer__col" aria-label="Explore">
+          <p class="home-footer__label">Explore</p>
+          <a href="#top">Overview</a>
+          <a href="#work">Selected work</a>
+          <a href="#guides">What guides my work</a>
+          <a href="#about">About</a>
+        </nav>
+        <div class="home-footer__col">
+          <p class="home-footer__label">Get in touch</p>
+          <a href="https://www.linkedin.com/in/daniela-ramirezt" target="_blank" rel="noopener noreferrer">
+            LinkedIn
+            <img src="assets/home/arrow-up-right.svg" alt="" width="24" height="24" />
+          </a>
+          <button type="button" class="home-nav__mail home-footer__mail" data-copy-email="hello@danielarmzt.design" aria-label="Copy hello@danielarmzt.design">
+            <span class="home-nav__mail-text">
+              <span class="home-nav__mail-label">hello@danielarmzt.design</span>
+              <span class="home-nav__mail-status" aria-live="polite"></span>
+            </span>
+            <img src="assets/home/arrow-up-right.svg" alt="" width="24" height="24" />
+          </button>
         </div>
       </div>
+      <div class="home-footer__rule">
+        <img src="assets/home/divider-footer.svg" alt="" width="1440" height="1" />
+      </div>
+      <div class="home-footer__base">
+        <p>© 2026 | Daniela Ramirez Torres. All rights reserved.</p>
+        <p>Designed with intention.</p>
+      </div>
     </footer>
+    <script>
+      (function () {
+        document.querySelectorAll("[data-copy-email]").forEach(function (button) {
+          var status = button.querySelector(".home-nav__mail-status");
+          var address = button.getAttribute("data-copy-email");
+          var timer;
 
-    <script src="js/main.js"></script>
+          function showCopied() {
+            button.classList.add("is-copied");
+            if (status) status.textContent = "Copied!";
+            window.clearTimeout(timer);
+            timer = window.setTimeout(function () {
+              button.classList.remove("is-copied");
+              if (status) status.textContent = "";
+            }, 2000);
+          }
+
+          function copyWithFallback() {
+            var input = document.createElement("textarea");
+            input.value = address;
+            input.setAttribute("readonly", "");
+            input.style.position = "fixed";
+            input.style.top = "0";
+            input.style.left = "0";
+            input.style.opacity = "0";
+            document.body.appendChild(input);
+            input.focus();
+            input.select();
+            input.setSelectionRange(0, address.length);
+            var copied = false;
+            try {
+              copied = document.execCommand("copy");
+            } catch (error) {
+              copied = false;
+            }
+            document.body.removeChild(input);
+            if (copied) showCopied();
+          }
+
+          button.addEventListener("click", function () {
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+              navigator.clipboard.writeText(address).then(showCopied).catch(copyWithFallback);
+              return;
+            }
+            copyWithFallback();
+          });
+        });
+      })();
+    </script>
   </body>
 </html>
