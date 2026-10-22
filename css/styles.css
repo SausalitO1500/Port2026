@@ -104,28 +104,25 @@
 
 html {
   scroll-behavior: smooth;
-  /* Fallback canvas. Page rules below split top and bottom:
-     mobile browsers paint the root background into the status bar
-     and top overscroll, above the navigation. */
+  /* Below the footer only: overscroll and the home-indicator band.
+     Do not change this to the nav color — that repaints the area
+     under “All rights reserved.” The band above the nav is separate. */
   background-color: #0b1849;
 }
 
-/* Top canvas matches the nav. Bottom half stays navy so rubber-band
-   past the footer and the home-indicator band stay #0b1849. */
+/* Above the navigation only. background-color stays #0b1849. */
 html:has(body.home) {
-  background-color: #1c48c6;
-  background-image: linear-gradient(#0b1849, #0b1849);
+  background-image: linear-gradient(#1c48c6, #1c48c6);
   background-repeat: no-repeat;
-  background-size: 100% 50%;
-  background-position: bottom center;
+  background-size: 100% 50vh;
+  background-position: top center;
 }
 
 html:has(body.case-study) {
-  background-color: #f5f4f0;
-  background-image: linear-gradient(#0b1849, #0b1849);
+  background-image: linear-gradient(#f5f4f0, #f5f4f0);
   background-repeat: no-repeat;
-  background-size: 100% 50%;
-  background-position: bottom center;
+  background-size: 100% 50vh;
+  background-position: top center;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -2911,8 +2908,8 @@ body.side-nav-theme-light #side-nav .side-nav__link.is-active .side-nav__label {
    ========================================================= */
 
 .case-study {
-  /* Matches the cream nav so the status bar and top overscroll stay #f5f4f0. */
-  background: #f5f4f0;
+  /* Top overscroll / status bar only. The footer and the area beneath it use html’s #0b1849. */
+  background-color: #f5f4f0;
   color: var(--ink);
 }
 
@@ -2927,6 +2924,18 @@ body.side-nav-theme-light #side-nav .side-nav__link.is-active .side-nav__label {
   color: #0b1849;
   position: relative;
   z-index: 20;
+}
+
+/* Paints only above the nav. Separate from the footer canvas. */
+.cs-nav::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 100%;
+  height: 100vh;
+  background: #f5f4f0;
+  pointer-events: none;
 }
 
 .cs-nav__bar {

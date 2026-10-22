@@ -10,8 +10,8 @@
 }
 
 body.home {
-  /* Matches the nav so the status bar and top overscroll stay cobalt. */
-  background: #1c48c6;
+  /* Top overscroll / status bar only. The footer and the area beneath it use html’s #0b1849. */
+  background-color: #1c48c6;
   color: #0b1849;
 }
 
@@ -43,8 +43,21 @@ body.home button:focus-visible {
 /* ---------- Navigation + hero ---------- */
 
 .home-nav {
+  position: relative;
   background: #1c48c6;
   color: #ffffff;
+}
+
+/* Paints only above the nav. Separate from the footer canvas. */
+.home-nav::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 100%;
+  height: 100vh;
+  background: #1c48c6;
+  pointer-events: none;
 }
 
 .home-nav__bar {
