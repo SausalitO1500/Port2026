@@ -24,7 +24,7 @@
     <link rel="icon" href="/Favicon.svg" type="image/svg+xml" />
     <link rel="icon" href="/Favicon.ico" sizes="any" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css?v=20261021c" />
   </head>
   <body class="case-study case-study--agent">
     <a class="skip-link" href="#main">Skip to content</a>
@@ -359,6 +359,20 @@
             copyWithFallback();
           });
         });
+      })();
+    </script>
+    <script>
+      (function () {
+        var meta = document.querySelector('meta[name="theme-color"]');
+        var footer = document.querySelector(".cs-footer");
+        if (!meta || !footer) return;
+        function sync() {
+          var footerOnScreen = footer.getBoundingClientRect().top < window.innerHeight * 0.65;
+          meta.setAttribute("content", footerOnScreen ? "#0B1849" : "#F5F4F0");
+        }
+        sync();
+        window.addEventListener("scroll", sync, { passive: true });
+        window.addEventListener("resize", sync);
       })();
     </script>
   </body>

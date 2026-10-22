@@ -15,6 +15,27 @@ body.home {
   color: #0b1849;
 }
 
+body.home::before,
+body.home::after {
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 50vh;
+  z-index: -1;
+  pointer-events: none;
+}
+
+body.home::before {
+  top: 0;
+  background: #1c48c6;
+}
+
+body.home::after {
+  bottom: 0;
+  background: #0b1849;
+}
+
 body.home #hero,
 body.home #work,
 body.home #guides,

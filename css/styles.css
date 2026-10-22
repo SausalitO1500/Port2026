@@ -2913,6 +2913,27 @@ body.side-nav-theme-light #side-nav .side-nav__link.is-active .side-nav__label {
   color: var(--ink);
 }
 
+.case-study::before,
+.case-study::after {
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 50vh;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.case-study::before {
+  top: 0;
+  background: #f5f4f0;
+}
+
+.case-study::after {
+  bottom: 0;
+  background: #0b1849;
+}
+
 .case-study main {
   background: var(--paper);
 }
