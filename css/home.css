@@ -987,15 +987,4 @@ body.home .home-principle h3 {
   .home-footer__legal-break {
     display: block;
   }
-
-  .home-footer::after {
-    content: "";
-    order: 6;
-    flex: 0 0 120px;
-    width: 100%;
-    height: 120px;
-    margin: 0 0 -120px;
-    background: #0b1849;
-    pointer-events: none;
-  }
 }

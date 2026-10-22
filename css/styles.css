@@ -5881,17 +5881,6 @@ body.side-nav-theme-light #side-nav .side-nav__link.is-active .side-nav__label {
   .cs-footer__legal-break {
     display: block;
   }
-
-  .cs-footer::after {
-    content: "";
-    order: 6;
-    flex: 0 0 120px;
-    width: 100%;
-    height: 120px;
-    margin: 0 0 -120px;
-    background: #0b1849;
-    pointer-events: none;
-  }
 }
 
 @media (prefers-reduced-motion: no-preference) {
