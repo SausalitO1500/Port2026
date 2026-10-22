@@ -104,8 +104,28 @@
 
 html {
   scroll-behavior: smooth;
-  /* Canvas color past the footer, including overscroll and the home-indicator band. */
+  /* Fallback canvas. Page rules below split top and bottom:
+     mobile browsers paint the root background into the status bar
+     and top overscroll, above the navigation. */
   background-color: #0b1849;
+}
+
+/* Top canvas matches the nav. Bottom half stays navy so rubber-band
+   past the footer and the home-indicator band stay #0b1849. */
+html:has(body.home) {
+  background-color: #1c48c6;
+  background-image: linear-gradient(#0b1849, #0b1849);
+  background-repeat: no-repeat;
+  background-size: 100% 50%;
+  background-position: bottom center;
+}
+
+html:has(body.case-study) {
+  background-color: #f5f4f0;
+  background-image: linear-gradient(#0b1849, #0b1849);
+  background-repeat: no-repeat;
+  background-size: 100% 50%;
+  background-position: bottom center;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -2891,7 +2911,8 @@ body.side-nav-theme-light #side-nav .side-nav__link.is-active .side-nav__label {
    ========================================================= */
 
 .case-study {
-  background: #0b1849;
+  /* Matches the cream nav so the status bar and top overscroll stay #f5f4f0. */
+  background: #f5f4f0;
   color: var(--ink);
 }
 

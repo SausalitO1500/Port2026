@@ -10,7 +10,8 @@
 }
 
 body.home {
-  background: #0b1849;
+  /* Matches the nav so the status bar and top overscroll stay cobalt. */
+  background: #1c48c6;
   color: #0b1849;
 }
 
