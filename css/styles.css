@@ -2580,8 +2580,9 @@ body.side-nav-theme-light #side-nav .side-nav__link.is-active .side-nav__label {
 /* ---------- Password gate (Figma 22:512 desktop · 789:117 mobile) ---------- */
 
 .password-page {
-  background: var(--navy);
-  color: var(--cream);
+  --password-bg: #1c48c6;
+  background: var(--password-bg);
+  color: #ffffff;
 }
 
 .password-gate {
@@ -2590,8 +2591,8 @@ body.side-nav-theme-light #side-nav .side-nav__link.is-active .side-nav__label {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--navy);
-  color: var(--cream);
+  background: var(--password-bg);
+  color: #ffffff;
 }
 
 .password-gate__shell {
@@ -2640,13 +2641,13 @@ body.side-nav-theme-light #side-nav .side-nav__link.is-active .side-nav__label {
   flex-direction: column;
   align-items: flex-start;
   width: 360px;
-  margin-top: 66px;
+  margin-top: 74px;
 }
 
 .password-gate__label-row {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 8px;
   min-height: 24px;
 }
 
@@ -2670,12 +2671,12 @@ body.side-nav-theme-light #side-nav .side-nav__link.is-active .side-nav__label {
   width: 360px;
   max-width: 100%;
   height: 50px;
-  margin-top: 16px;
+  margin-top: 8px;
   padding: 0 13px;
   border-radius: 10px;
-  border: 2px solid rgba(255, 255, 255, 0.1);
-  background: rgba(23, 36, 82, 0.99);
-  color: #ffffff;
+  border: 2px solid #ffffff;
+  background: #ffffff;
+  color: #0b1849;
   font-family: var(--sans);
   font-size: 16px;
   font-weight: 500;
@@ -2686,26 +2687,53 @@ body.side-nav-theme-light #side-nav .side-nav__link.is-active .side-nav__label {
 }
 
 .password-gate__input::placeholder {
-  color: var(--secondary);
+  color: #959595;
   opacity: 1;
 }
 
-.password-gate__input:focus {
-  border-color: rgba(255, 255, 255, 0.28);
+.password-gate__input:focus,
+.password-gate__input:focus-visible {
+  border-color: #ffffff;
+  outline: none;
 }
 
 .password-gate__submit {
-  margin-top: 24px;
+  margin-top: 44px;
 }
 
 .password-gate__error {
-  min-height: 1.25rem;
-  margin-top: 12px;
+  display: none;
+  align-items: center;
+  gap: 8px;
+  margin: 8px 0 0;
+  color: #ffc7c2;
   font-family: var(--sans);
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
-  line-height: 20px;
-  color: #f2abde;
+  line-height: 24px;
+  font-variation-settings: "opsz" 14, "wght" 500;
+}
+
+.password-gate__warning {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  display: block;
+}
+
+/* Error message sits in the gap reserved under the field — Figma 984:444 */
+.password-gate__form.is-error .password-gate__error {
+  display: flex;
+}
+
+.password-gate__form.is-error .password-gate__submit {
+  margin-top: 12px;
+}
+
+@media (min-width: 901px) {
+  .password-gate__shell {
+    margin-top: 18px;
+  }
 }
 
 .password-gate__headline {
@@ -2714,19 +2742,20 @@ body.side-nav-theme-light #side-nav .side-nav__link.is-active .side-nav__label {
   font-size: 54px;
   font-weight: 600;
   line-height: 58px;
-  letter-spacing: -0.01em;
-  color: var(--cream);
+  letter-spacing: 0;
+  color: #ffffff;
+  font-variation-settings: "opsz" 54, "wght" 600;
 }
 
 .password-gate__lede {
   margin: 0;
   max-width: 552px;
   font-family: var(--sans);
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 24px;
-  font-variation-settings: "opsz" 14;
-  color: var(--cream);
+  font-variation-settings: "opsz" 14, "wght" 500;
+  color: #ffffff;
 }
 
 @media (max-width: 1200px) {
