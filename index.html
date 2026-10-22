@@ -2,6 +2,18 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <script>
+      (function () {
+        var authed = false;
+        try { authed = localStorage.getItem("drmzt-auth") === "1"; } catch (error) {}
+        if (!authed) {
+          try { authed = sessionStorage.getItem("drmzt-auth") === "1"; } catch (error) {}
+        }
+        if (authed) return;
+        document.documentElement.style.visibility = "hidden";
+        location.replace("/password.html");
+      })();
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <title>Daniela Ramirez Torres — Product Designer</title>
     <meta

@@ -2,20 +2,31 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="refresh" content="0; url=../loyalty.html" />
-    <link rel="canonical" href="../loyalty.html" />
+    <link rel="canonical" href="/loyalty.html" />
     <title>Kohl’s Loyalty — Daniela Ramirez Torres</title>
     <link rel="icon" href="/Favicon.svg" type="image/svg+xml" />
     <link rel="icon" href="/Favicon.ico" sizes="any" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <script>
-      location.replace("../loyalty.html");
+      (function () {
+        var authed = false;
+        try { authed = localStorage.getItem("drmzt-auth") === "1"; } catch (error) {}
+        if (!authed) {
+          try { authed = sessionStorage.getItem("drmzt-auth") === "1"; } catch (error) {}
+        }
+        if (authed) {
+          location.replace("/loyalty.html");
+          return;
+        }
+        document.documentElement.style.visibility = "hidden";
+        location.replace("/password.html");
+      })();
     </script>
   </head>
   <body>
     <main>
       <p>
-        <a href="../loyalty.html">Continue to Kohl’s Loyalty case study</a>
+        <a href="/password.html">Enter the site</a>
       </p>
     </main>
   </body>
