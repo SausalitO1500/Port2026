@@ -5976,11 +5976,6 @@ body.side-nav-theme-light #side-nav .side-nav__link.is-active .side-nav__label {
   margin: 0;
 }
 
-.case-study--citi .cs-hero__tagline {
-  margin-top: 8px;
-  font-weight: 600;
-}
-
 .case-study--citi .cs-hero__media {
   position: relative;
   flex: 0 0 712px;
