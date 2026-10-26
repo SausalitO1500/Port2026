@@ -1,0 +1,119 @@
+/* Reusable horizontal carousel.
+   One page is visible at a time. Set --carousel-per-view to show
+   more than one item inside that page. */
+
+.carousel {
+  --carousel-per-view: 1;
+  --carousel-gap: 20px;
+  --carousel-accent: #1c48c6;
+  --carousel-ink: #0b1849;
+  min-width: 0;
+}
+
+.carousel__nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  margin-right: -10px;
+}
+
+.carousel__arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--carousel-ink);
+  cursor: pointer;
+}
+
+.carousel__arrow::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: currentColor;
+  -webkit-mask: var(--carousel-arrow) center / 24px 24px no-repeat;
+  mask: var(--carousel-arrow) center / 24px 24px no-repeat;
+}
+
+.carousel__arrow--prev {
+  --carousel-arrow: url("../assets/home/caret-left.svg");
+}
+
+.carousel__arrow--next {
+  --carousel-arrow: url("../assets/home/caret-right.svg");
+}
+
+.carousel__arrow:hover,
+.carousel__arrow:focus-visible {
+  color: var(--carousel-accent);
+}
+
+.carousel__arrow:disabled {
+  color: var(--carousel-ink);
+  opacity: 0.32;
+  cursor: default;
+}
+
+.carousel__count {
+  margin: 0;
+  color: var(--carousel-ink);
+  font-family: "DM Sans", sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 46px;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+  font-variant-numeric: tabular-nums;
+  font-variation-settings: "opsz" 14, "wght" 900;
+  white-space: nowrap;
+}
+
+.carousel__status {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.carousel__viewport {
+  overflow: hidden;
+  outline: none;
+  touch-action: pan-y;
+}
+
+.carousel__viewport:focus-visible {
+  outline: 2px solid var(--carousel-accent);
+  outline-offset: 4px;
+}
+
+.carousel__track {
+  display: flex;
+  align-items: stretch;
+  gap: var(--carousel-gap);
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.carousel__track.is-instant {
+  transition: none;
+}
+
+.carousel__slide {
+  flex: 0 0 calc((100% - (var(--carousel-per-view) - 1) * var(--carousel-gap)) / var(--carousel-per-view));
+  min-width: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .carousel__track {
+    transition: none;
+  }
+}

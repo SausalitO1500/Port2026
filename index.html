@@ -25,7 +25,8 @@
     <link rel="icon" href="/Favicon.ico" sizes="any" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="stylesheet" href="css/styles.css?v=20261021c" />
-    <link rel="stylesheet" href="css/home.css?v=20261021c" />
+    <link rel="stylesheet" href="css/carousel.css?v=20261025b" />
+    <link rel="stylesheet" href="css/home.css?v=20261025f" />
   </head>
   <body class="home">
     <a class="skip-link" href="#main">Skip to content</a>
@@ -65,9 +66,35 @@
 
       <section class="home-work" id="work">
         <div class="home-work__inner">
-          <h2 class="home-kicker">Selected work</h2>
-          <div class="home-work__grid">
-            <article class="home-project">
+          <div class="carousel" data-carousel data-carousel-loop data-carousel-label="projects">
+            <div class="home-work__head">
+              <h2 class="home-kicker" id="work-heading">Selected work</h2>
+              <div class="carousel__nav">
+                <button
+                  type="button"
+                  class="carousel__arrow carousel__arrow--prev"
+                  data-carousel-prev
+                  aria-label="Previous projects"
+                ></button>
+                <p class="carousel__count" data-carousel-count aria-hidden="true">1 / 4</p>
+                <button
+                  type="button"
+                  class="carousel__arrow carousel__arrow--next"
+                  data-carousel-next
+                  aria-label="Next projects"
+                ></button>
+                <p class="carousel__status" data-carousel-status aria-live="polite"></p>
+              </div>
+            </div>
+            <div
+              class="carousel__viewport"
+              data-carousel-viewport
+              tabindex="0"
+              aria-roledescription="carousel"
+              aria-labelledby="work-heading"
+            >
+              <div class="carousel__track" data-carousel-track>
+            <article class="home-project carousel__slide">
               <div class="home-project__media home-project__media--agent">
                 <img
                   src="assets/home/project-agent.png"
@@ -89,7 +116,7 @@
               </a>
             </article>
 
-            <article class="home-project">
+            <article class="home-project carousel__slide">
               <div class="home-project__media home-project__media--phones">
                 <div class="home-phone home-phone--sub-a">
                   <img
@@ -119,7 +146,37 @@
               </a>
             </article>
 
-            <article class="home-project">
+            <article class="home-project carousel__slide">
+              <div class="home-project__media home-project__media--phones">
+                <div class="home-phone home-phone--citi-a">
+                  <img
+                    src="assets/home/citi-monthly.png"
+                    alt="Citi mobile banking monthly overview for November"
+                    width="1179"
+                    height="2556"
+                  />
+                </div>
+                <div class="home-phone home-phone--citi-b">
+                  <img
+                    src="assets/home/citi-screen.png"
+                    alt=""
+                    width="1179"
+                    height="2556"
+                  />
+                </div>
+              </div>
+              <p class="home-project__meta">Citi / Mobile Banking</p>
+              <h3>Bringing a new mobile banking experience to life</h3>
+              <p class="home-project__text">
+                Helped build Citi’s mobile app from the ground up, designing banking features, interactions, and visual experiences.
+              </p>
+              <a class="home-project__link" href="citi-mobile-banking.html">
+                View project
+                <img src="assets/home/arrow-up-right-blue.svg" alt="" width="24" height="24" />
+              </a>
+            </article>
+
+            <article class="home-project carousel__slide">
               <div class="home-project__media home-project__media--phones">
                 <div class="home-phone home-phone--loy-a">
                   <img
@@ -148,6 +205,8 @@
                 <img src="assets/home/arrow-up-right-blue.svg" alt="" width="24" height="24" />
               </a>
             </article>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -390,6 +449,7 @@
         });
       })();
     </script>
+    <script src="js/carousel.js?v=20261025d"></script>
     <script>
       (function () {
         var meta = document.querySelector('meta[name="theme-color"]');

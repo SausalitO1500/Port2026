@@ -1,0 +1,6 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="63.5" height="60.9375" viewBox="0 0 63.5 60.9375" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Suitcase">
+<path id="Shape" d="M38.1562 59.9375C32.4577 59.9375 23.4907 59.9375 6.125 59.9375C3.29454 59.9375 1 57.373 1 54.2096V16.9779C1 13.8145 3.29454 11.25 6.125 11.25H57.375C60.2055 11.25 62.5 13.8145 62.5 16.9779V34.1618V49.2231V54.2096C62.5 57.373 60.2055 59.9375 57.375 59.9375C54.34 59.9375 52.2064 59.9375 50.9743 59.9375" fill-rule="evenodd" clip-rule="evenodd" fill="#A07070" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#333333"/>
+<path id="Handle" d="M18.9375 31.75V6.59091C18.9375 3.50314 21.232 1 24.0625 1V1H39.4375C42.268 1 44.5625 3.50314 44.5625 6.59091V31.75" stroke-width="2" stroke-linecap="round" stroke="#333333"/>
+</g>
+</svg>

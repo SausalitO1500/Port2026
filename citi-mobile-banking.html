@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      (function () {
+        if (location.protocol === "file:") return;
+        var authed = false;
+        try { authed = localStorage.getItem("drmzt-auth") === "1"; } catch (error) {}
+        if (!authed) {
+          try { authed = sessionStorage.getItem("drmzt-auth") === "1"; } catch (error) {}
+        }
+        if (authed) return;
+        document.documentElement.style.visibility = "hidden";
+        var next = location.pathname + location.search + location.hash;
+        location.replace("password.html?next=" + encodeURIComponent(next));
+      })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#F5F4F0" />
+    <title>Citi Mobile Banking — Daniela Ramirez Torres</title>
+    <meta
+      name="description"
+      content="Modernizing Citi’s mobile banking experience — a case study by Daniela Ramirez Torres."
+    />
+    <link rel="icon" href="/Favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/Favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="stylesheet" href="css/styles.css?v=20261025d" />
+  </head>
+  <body class="case-study case-study--citi">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="cs-nav">
+      <div class="cs-nav__bar">
+        <a class="cs-nav__logo" href="index.html" aria-label="Daniela Ramirez Torres — Home">
+          <img src="assets/case-studies/chrome/nav-logo.svg" alt="" width="105" height="77" />
+        </a>
+        <button type="button" class="cs-nav__mail" data-copy-email="hello@danielarmzt.design" aria-label="Copy hello@danielarmzt.design">
+          <span class="cs-mail__text">
+            <span class="cs-mail__label">hello@danielarmzt.design</span>
+            <span class="cs-mail__status" aria-live="polite"></span>
+          </span>
+          <img src="assets/case-studies/chrome/arrow-up-right-navy.svg" alt="" width="24" height="24" />
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="cs-hero" aria-labelledby="cs-hero-title">
+        <div class="cs-hero__layout">
+          <div class="cs-hero__copy">
+            <div class="cs-hero__intro">
+              <h1 id="cs-hero-title">Modernizing Citi’s mobile banking experience</h1>
+              <div class="cs-hero__lede">
+                <p>
+                  Helping bring everyday banking and financial guidance into one cohesive mobile
+                  experience, with intuitive flows, reusable UI patterns, and a design foundation
+                  built to scale.
+                </p>
+                <p class="cs-hero__tagline">Product design · Mobile banking · Design systems</p>
+              </div>
+            </div>
+            <div class="cs-hero__meta">
+              <div>
+                <p class="cs-hero__meta-label">Role</p>
+                <p class="cs-hero__meta-value">Product Designer</p>
+              </div>
+              <div>
+                <p class="cs-hero__meta-label">Client</p>
+                <p class="cs-hero__meta-value">Citi</p>
+              </div>
+            </div>
+          </div>
+          <div class="cs-hero__media">
+            <img
+              src="assets/case-studies/citi-mobile/hero.png"
+              alt="Woman in a bright office looking at her phone"
+              width="1820"
+              height="1213"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="cs-details" aria-label="Project overview">
+        <div class="shell">
+          <div class="cs-details__row">
+            <article class="cs-detail">
+              <div class="cs-detail__icon" aria-hidden="true">
+                <img src="assets/icons/puzzle.svg" alt="" width="24" height="24" />
+              </div>
+              <div class="cs-detail__text">
+                <h2>Challenge</h2>
+                <p>
+                  Citi set out to build a new mobile banking experience from the ground up. The
+                  challenge was turning an ambitious vision and many ideas into a cohesive product,
+                  identifying the features that mattered most to customers.
+                </p>
+              </div>
+            </article>
+            <article class="cs-detail">
+              <div class="cs-detail__icon" aria-hidden="true">
+                <img src="assets/icons/laptop.svg" alt="" width="24" height="24" />
+              </div>
+              <div class="cs-detail__text">
+                <h2>My Contribution</h2>
+                <p>
+                  I designed end-to-end UX flows, UI screens, illustrations, and iconography. I
+                  tested and refined interactions, created new UI patterns where needed, and worked
+                  closely with my design manager and engineers throughout.
+                </p>
+              </div>
+            </article>
+            <article class="cs-detail">
+              <div class="cs-detail__icon" aria-hidden="true">
+                <img src="assets/icons/world.svg" alt="" width="24" height="24" />
+              </div>
+              <div class="cs-detail__text">
+                <h2>Impact</h2>
+                <p>
+                  The new mobile experience made it easier for customers to access more banking
+                  features and open accounts. Mobile account openings reached nearly 2,500,
+                  exceeding the initial target of 2,000 by approximately 25%.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="cs-body" aria-label="Case study">
+        <div class="shell citi-story">
+          <div class="citi-intro">
+            <h2>Turning Citi’s vision into a connected mobile experience</h2>
+            <p>
+              Building Citi’s new mobile app meant turning a wide range of ideas into experiences
+              that felt intuitive and worked together. I designed features across the customer
+              journey, connecting flows, refining interactions, and creating illustrations and
+              iconography that made the experience easier to use.
+            </p>
+          </div>
+
+          <div class="citi-onboard">
+            <div class="citi-onboard__copy">
+              <h2>Show customers what the new app can do</h2>
+              <p>
+                The first-time experience introduced customers to the app’s new capabilities and the
+                benefits of using them. I designed the onboarding screens and created custom
+                illustrations to make each feature easy to understand and give customers a reason to
+                explore.
+              </p>
+            </div>
+            <div class="citi-screens">
+              <figure>
+                <img
+                  src="assets/case-studies/citi-mobile/welcome-1.png"
+                  alt="Onboarding screen introducing a single view of Citi and non-Citi accounts"
+                  width="1179"
+                  height="2556"
+                />
+              </figure>
+              <figure>
+                <img
+                  src="assets/case-studies/citi-mobile/welcome-2.png"
+                  alt="Onboarding screen introducing spending insights and monthly guidance"
+                  width="1179"
+                  height="2556"
+                />
+              </figure>
+              <figure>
+                <img
+                  src="assets/case-studies/citi-mobile/welcome-3.png"
+                  alt="Onboarding screen introducing a single view of bills"
+                  width="1179"
+                  height="2556"
+                />
+              </figure>
+            </div>
+          </div>
+
+          <div class="cs-feature">
+            <div class="cs-feature__copy">
+              <div class="cs-feature__heading">
+                <p class="cs-feature__eyebrow">Dashboard tile design</p>
+                <h3>Bring important account<br />information together</h3>
+              </div>
+              <p class="cs-feature__body">
+                Dashboard tiles introduced customers to capabilities such as connecting external
+                accounts and exploring banking offers. I designed the entry points and worked with a
+                content designer to communicate the benefits clearly, giving customers a reason to
+                take the next step.
+              </p>
+            </div>
+            <figure class="cs-feature__media cs-feature__media--dashboard">
+              <img
+                src="assets/case-studies/citi-mobile/dashboard-tile.png?v=20261025c"
+                alt="Account dashboard with checking balances, account summary, and a monthly overview tile"
+                width="1179"
+                height="2556"
+              />
+            </figure>
+          </div>
+
+          <div class="cs-feature">
+            <div class="cs-feature__copy">
+              <div class="cs-feature__heading">
+                <p class="cs-feature__eyebrow">Monthly financial overview</p>
+                <h3>Make it easier to understand monthly finances</h3>
+              </div>
+              <p class="cs-feature__body">
+                The monthly overview brought financial information together to help customers better
+                understand their spending and cash flow. I helped design and refine the screens and
+                interactions to make financial activity easier to follow and give customers a
+                clearer picture of their money.
+              </p>
+            </div>
+            <figure class="cs-feature__media">
+              <img
+                src="assets/case-studies/citi-mobile/monthly-overview.png"
+                alt="Monthly overview with cash flow, spending categories, and a balance chart"
+                width="1179"
+                height="2556"
+              />
+            </figure>
+          </div>
+
+          <div class="cs-feature">
+            <div class="cs-feature__copy">
+              <div class="cs-feature__heading">
+                <p class="cs-feature__eyebrow">Categorization</p>
+                <h3>Help customers recognize their spending</h3>
+              </div>
+              <p class="cs-feature__body">
+                Transaction categories needed to be recognizable even when merchant logos weren’t
+                available. I created 30 custom icons to represent different types of spending, using
+                a consistent visual style to make each category clear, recognizable, and easy to
+                identify at a glance.
+              </p>
+            </div>
+            <figure class="cs-feature__media">
+              <img
+                src="assets/case-studies/citi-mobile/categorization.png?v=20261025d"
+                alt="Spending categories list using custom icons beside each transaction type"
+                width="1179"
+                height="2556"
+              />
+            </figure>
+          </div>
+        </div>
+
+        <div class="shell citi-explore">
+          <div class="citi-explore__intro">
+            <h2>Exploring the experience in more detail</h2>
+            <p>
+              Beyond these features, I designed screens and interactions across account management,
+              transaction details, financial insights, and banking offers.
+              <br class="citi-break" />
+              Each required attention to how customers moved through the app and how individual
+              experiences worked together.
+            </p>
+          </div>
+
+          <div class="cs-gallery" aria-label="Additional product screens">
+            <div class="cs-gallery__col">
+              <figure class="cs-gallery__item citi-shot citi-shot--bills">
+                <img
+                  src="assets/case-studies/citi-mobile/bills-tile.png"
+                  alt="Bills summary tile"
+                  width="1080"
+                  height="1020"
+                />
+              </figure>
+              <figure class="cs-gallery__item citi-shot citi-shot--phone">
+                <img
+                  src="assets/case-studies/citi-mobile/monthly-nov.png"
+                  alt="November monthly overview"
+                  width="1179"
+                  height="2556"
+                />
+              </figure>
+              <figure class="cs-gallery__item citi-shot citi-shot--alert">
+                <img
+                  src="assets/case-studies/citi-mobile/abnormal-high.png"
+                  alt="Alert for higher than usual spending"
+                  width="1080"
+                  height="720"
+                />
+              </figure>
+              <figure class="cs-gallery__item citi-shot citi-shot--bills-modal citi-crop">
+                <img
+                  src="assets/case-studies/citi-mobile/bills-modal.png"
+                  alt="Bills detail sheet"
+                  width="1080"
+                  height="1500"
+                />
+              </figure>
+              <figure class="cs-gallery__item citi-shot citi-shot--phone">
+                <img
+                  src="assets/case-studies/citi-mobile/spending-categories.png?v=20261025e"
+                  alt="Spending categories breakdown"
+                  width="1179"
+                  height="2556"
+                />
+              </figure>
+              <figure class="cs-gallery__item citi-shot citi-shot--welcome-link citi-crop">
+                <img
+                  src="assets/case-studies/citi-mobile/welcome-link.png"
+                  alt="Linked accounts welcome moment"
+                  width="1179"
+                  height="2556"
+                />
+              </figure>
+            </div>
+            <div class="cs-gallery__col">
+              <figure class="cs-gallery__item citi-shot citi-shot--dashboard">
+                <img
+                  src="assets/case-studies/citi-mobile/dashboard-full.png"
+                  alt="Full account dashboard"
+                  width="660"
+                  height="4096"
+                />
+              </figure>
+              <figure class="cs-gallery__item citi-shot citi-shot--spending citi-crop">
+                <img
+                  src="assets/case-studies/citi-mobile/spending-tile.png"
+                  alt="Spending summary tile"
+                  width="1080"
+                  height="900"
+                />
+              </figure>
+              <figure class="cs-gallery__item citi-shot citi-shot--offer citi-crop">
+                <img
+                  src="assets/case-studies/citi-mobile/offer-aa.png"
+                  alt="Banking offer detail"
+                  width="1179"
+                  height="2556"
+                />
+              </figure>
+            </div>
+            <div class="cs-gallery__col">
+              <figure class="cs-gallery__item citi-shot citi-shot--phone">
+                <img
+                  src="assets/case-studies/citi-mobile/account-opening.png"
+                  alt="Account opening screen"
+                  width="1179"
+                  height="2556"
+                />
+              </figure>
+              <figure class="cs-gallery__item citi-shot citi-shot--offer-live citi-crop">
+                <img
+                  src="assets/case-studies/citi-mobile/offer-live.png"
+                  alt="Featured banking offer"
+                  width="1179"
+                  height="2556"
+                />
+              </figure>
+              <figure class="cs-gallery__item citi-shot citi-shot--phone">
+                <img
+                  src="assets/case-studies/citi-mobile/travel.png"
+                  alt="Travel spending screen"
+                  width="1179"
+                  height="2556"
+                />
+              </figure>
+              <figure class="cs-gallery__item citi-shot citi-shot--activity">
+                <img
+                  src="assets/case-studies/citi-mobile/recent-activity.png"
+                  alt="Recent activity tile"
+                  width="1080"
+                  height="1050"
+                />
+              </figure>
+              <figure class="cs-gallery__item citi-shot citi-shot--alert">
+                <img
+                  src="assets/case-studies/citi-mobile/abnormal-normal.png"
+                  alt="Spending alert within a normal range"
+                  width="1080"
+                  height="720"
+                />
+              </figure>
+              <figure class="cs-gallery__item citi-shot citi-shot--activity">
+                <img
+                  src="assets/case-studies/citi-mobile/monthly-tile.png"
+                  alt="Monthly overview tile"
+                  width="1080"
+                  height="1050"
+                />
+              </figure>
+            </div>
+          </div>
+
+          <div class="citi-icons-head">
+            <h2>Transaction category iconography</h2>
+            <p>
+              30 custom icons designed to make spending categories recognizable when merchant logos
+              weren’t available.
+            </p>
+          </div>
+
+          <ul class="citi-icons">
+            <li style="--w: 32.226%; --h: 20.351%">
+              <img class="is-flip" src="assets/case-studies/citi-mobile/icons/car.svg" alt="Auto and transit" width="66" height="42" />
+            </li>
+            <li style="--w: 20.976%; --h: 28.556%">
+              <img src="assets/case-studies/citi-mobile/icons/glass.svg" alt="Bars and coffee" width="43" height="59" />
+            </li>
+            <li style="--w: 25.976%; --h: 29.726%">
+              <img src="assets/case-studies/citi-mobile/icons/bills.svg" alt="Bills" width="53" height="61" />
+            </li>
+            <li style="--w: 30.976%; --h: 29.726%">
+              <img src="assets/case-studies/citi-mobile/icons/suitcase.svg" alt="Business" width="64" height="61" />
+            </li>
+            <li class="citi-icons__cell--checks">
+              <img class="citi-icons__cash" src="assets/case-studies/citi-mobile/icons/cash.svg" alt="" width="64" height="38" />
+              <img class="citi-icons__check" src="assets/case-studies/citi-mobile/icons/check.svg" alt="Cash and checks" width="64" height="30" />
+            </li>
+            <li style="--w: 30.976%; --h: 35.445%">
+              <img src="assets/case-studies/citi-mobile/icons/cap.svg" alt="Education" width="64" height="73" />
+            </li>
+            <li style="--w: 28.476%; --h: 18.476%">
+              <img class="is-tilt" src="assets/case-studies/citi-mobile/icons/ticket.svg" alt="Entertainment" width="58" height="38" />
+            </li>
+            <li style="--w: 25.976%; --h: 28.705%">
+              <img src="assets/case-studies/citi-mobile/icons/fee.svg" alt="Fees" width="53" height="59" />
+            </li>
+            <li style="--w: 30.976%; --h: 25.976%">
+              <img src="assets/case-studies/citi-mobile/icons/cart.svg" alt="Groceries" width="64" height="53" />
+            </li>
+            <li class="citi-icons__cell--health">
+              <img class="citi-icons__heart" src="assets/case-studies/citi-mobile/icons/heart.svg" alt="" width="64" height="58" />
+              <img class="citi-icons__cross" src="assets/case-studies/citi-mobile/icons/cross.svg" alt="Health and pharmacy" width="14" height="14" />
+            </li>
+            <li style="--w: 33.476%; --h: 15.976%">
+              <img src="assets/case-studies/citi-mobile/icons/weight.svg" alt="Personal care and fitness" width="69" height="33" />
+            </li>
+            <li style="--w: 30.976%; --h: 30.976%">
+              <img src="assets/case-studies/citi-mobile/icons/chart.svg" alt="Investment" width="64" height="64" />
+            </li>
+            <li style="--w: 26.839%; --h: 34.726%">
+              <img src="assets/case-studies/citi-mobile/icons/giraffe.svg" alt="Kids" width="55" height="71" />
+            </li>
+            <li style="--w: 30.244%; --h: 23.815%">
+              <img src="assets/case-studies/citi-mobile/icons/paw.svg" alt="Pets" width="62" height="49" />
+            </li>
+            <li style="--w: 25.976%; --h: 30.976%">
+              <img src="assets/case-studies/citi-mobile/icons/restaurants.svg" alt="Restaurants" width="53" height="64" />
+            </li>
+            <li style="--w: 25.982%; --h: 29.726%">
+              <img src="assets/case-studies/citi-mobile/icons/bag.svg" alt="Shopping" width="53" height="61" />
+            </li>
+            <li style="--w: 25.976%; --h: 28.476%">
+              <img src="assets/case-studies/citi-mobile/icons/tax.svg" alt="Taxes and charges" width="53" height="58" />
+            </li>
+            <li style="--w: 30.976%; --h: 18.476%">
+              <img src="assets/case-studies/citi-mobile/icons/income.svg" alt="Income" width="64" height="38" />
+            </li>
+            <li style="--w: 32.283%; --h: 23.226%">
+              <img src="assets/case-studies/citi-mobile/icons/airplane.svg" alt="Transfer" width="66" height="48" />
+            </li>
+            <li style="--w: 30.976%; --h: 29.726%">
+              <img src="assets/case-studies/citi-mobile/icons/house.svg" alt="Housing" width="64" height="61" />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="cs-next">
+        <div class="shell cs-next__layout">
+          <a class="cs-next__link" href="loyalty.html">
+            <div class="cs-next__label">
+              <span>NEXT PROJECT</span>
+              <img src="assets/icons/arrow-right.svg" alt="" width="24" height="24" />
+            </div>
+            <p class="cs-next__title">
+              Making Kohl’s loyalty easier to understand, use,<br />
+              and return to
+            </p>
+          </a>
+          <a class="btn btn--home" href="index.html">
+            <img src="assets/icons/house.svg" alt="" width="18" height="18" />
+            <span>Back to home</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="cs-footer">
+      <div class="cs-footer__main">
+        <div class="cs-footer__brand">
+          <img
+            class="cs-footer__logo"
+            src="assets/case-studies/chrome/footer-wordmark.svg"
+            alt="Daniela Ramirez Torres."
+            width="629"
+            height="383"
+          />
+          <img
+            class="cs-footer__logo cs-footer__logo--mobile"
+            src="assets/home/footer-wordmark-mobile.svg"
+            alt="Daniela Ramirez Torres."
+            width="351"
+            height="220"
+          />
+        </div>
+        <nav class="cs-footer__col" aria-label="Explore">
+          <p class="cs-footer__label">Explore</p>
+          <a href="index.html#top">Overview</a>
+          <a href="index.html#work">Selected work</a>
+          <a href="index.html#guides">What guides my work</a>
+          <a href="index.html#about">About</a>
+        </nav>
+        <div class="cs-footer__col">
+          <p class="cs-footer__label">Get in touch</p>
+          <a href="https://www.linkedin.com/in/daniela-ramirezt" target="_blank" rel="noopener noreferrer">
+            LinkedIn
+            <img src="assets/home/arrow-up-right.svg" alt="" width="24" height="24" />
+          </a>
+          <button type="button" class="cs-footer__mail" data-copy-email="hello@danielarmzt.design" aria-label="Copy hello@danielarmzt.design">
+            <span class="cs-mail__text">
+              <span class="cs-mail__label">hello@danielarmzt.design</span>
+              <span class="cs-mail__status" aria-live="polite"></span>
+            </span>
+            <img src="assets/home/arrow-up-right.svg" alt="" width="24" height="24" />
+          </button>
+        </div>
+      </div>
+      <div class="cs-footer__rule">
+        <img src="assets/home/divider-footer.svg" alt="" width="1440" height="1" />
+      </div>
+      <div class="cs-footer__base">
+        <p>© 2026 | Daniela Ramirez Torres. <br class="cs-footer__legal-break" />All rights reserved.</p>
+        <p>Designed with intention.</p>
+      </div>
+    </footer>
+    <script>
+      (function () {
+        document.querySelectorAll("[data-copy-email]").forEach(function (button) {
+          var status = button.querySelector(".cs-mail__status");
+          var address = button.getAttribute("data-copy-email");
+          var timer;
+
+          function showCopied() {
+            button.classList.add("is-copied");
+            if (status) status.textContent = "Copied!";
+            window.clearTimeout(timer);
+            timer = window.setTimeout(function () {
+              button.classList.remove("is-copied");
+              if (status) status.textContent = "";
+            }, 2000);
+          }
+
+          function copyWithFallback() {
+            var input = document.createElement("textarea");
+            input.value = address;
+            input.setAttribute("readonly", "");
+            input.style.position = "fixed";
+            input.style.top = "0";
+            input.style.left = "0";
+            input.style.opacity = "0";
+            document.body.appendChild(input);
+            input.focus();
+            input.select();
+            input.setSelectionRange(0, address.length);
+            var copied = false;
+            try {
+              copied = document.execCommand("copy");
+            } catch (error) {
+              copied = false;
+            }
+            document.body.removeChild(input);
+            if (copied) showCopied();
+          }
+
+          button.addEventListener("click", function () {
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+              navigator.clipboard.writeText(address).then(showCopied).catch(copyWithFallback);
+              return;
+            }
+            copyWithFallback();
+          });
+        });
+      })();
+    </script>
+    <script>
+      (function () {
+        var meta = document.querySelector('meta[name="theme-color"]');
+        var footer = document.querySelector(".cs-footer");
+        if (!meta || !footer) return;
+        function sync() {
+          var footerOnScreen = footer.getBoundingClientRect().top < window.innerHeight * 0.65;
+          meta.setAttribute("content", footerOnScreen ? "#0B1849" : "#F5F4F0");
+        }
+        sync();
+        window.addEventListener("scroll", sync, { passive: true });
+        window.addEventListener("resize", sync);
+      })();
+    </script>
+  </body>
+</html>

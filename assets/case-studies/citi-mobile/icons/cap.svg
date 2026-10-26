@@ -1,0 +1,9 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="63.5" height="72.6613" viewBox="0 0 63.5 72.6613" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Cap">
+<path id="Path 5" d="M13.8125 71.6613V63.4113C13.8125 62.3067 14.7079 61.4113 15.8125 61.4113H19.5C20.6046 61.4113 21.5 62.3067 21.5 63.4113V71.6613H13.8125Z" fill-rule="evenodd" clip-rule="evenodd" fill="#F49325"/>
+<path id="Bottom" d="M8.6875 16.5675L8.68754 41.3991C8.68754 41.3991 10.1289 53.7238 31.75 53.7238C53.3711 53.7238 54.8125 41.3991 54.8125 41.3991V16.5675" fill-rule="evenodd" clip-rule="evenodd" fill="#977AA6"/>
+<path id="Bottom_2" d="M8.6875 26.8175L8.68754 43.3436C8.68754 43.3436 10.1289 53.7238 31.75 53.7238C53.3711 53.7238 54.8125 43.3436 54.8125 43.3436V26.8175" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#333333"/>
+<path id="Top" d="M32.538 1.16176C32.0348 0.94608 31.4652 0.946079 30.962 1.16176L1 14.005L30.962 26.8483C31.4652 27.064 32.0348 27.064 32.538 26.8483L62.5 14.005L32.538 1.16176Z" fill-rule="evenodd" clip-rule="evenodd" fill="#6E4687" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#333333"/>
+<path id="Tassle" d="M17.6562 15.2863V61.4113M13.8125 71.6613V63.4113C13.8125 62.3067 14.7079 61.4113 15.8125 61.4113H19.5C20.6046 61.4113 21.5 62.3067 21.5 63.4113V71.6613H13.8125Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#333333"/>
+</g>
+</svg>
