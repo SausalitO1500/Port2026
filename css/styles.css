@@ -6142,8 +6142,20 @@ body.side-nav-theme-light #side-nav .side-nav__link.is-active .side-nav__label {
   color: var(--ink);
 }
 
-.case-study--citi .citi-icons-head {
+.case-study--citi .citi-icons-block {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
   margin-top: 56px;
+}
+
+.case-study--citi .citi-icons-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin-top: 0;
 }
 
 .case-study--citi .citi-explore__intro {
@@ -6250,9 +6262,15 @@ body.side-nav-theme-light #side-nav .side-nav__link.is-active .side-nav__label {
   top: -49.33%;
 }
 
+.case-study--citi .citi-icons-mobile {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+
 .case-study--citi .citi-icons {
   list-style: none;
-  margin: 16px 0 0;
+  margin: 0;
   padding: 0;
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -6388,8 +6406,12 @@ body.side-nav-theme-light #side-nav .side-nav__link.is-active .side-nav__label {
     margin-top: 64px;
   }
 
-  .case-study--citi .citi-icons-head {
+  .case-study--citi .citi-icons-block {
     margin-top: 16px;
+  }
+
+  .case-study--citi .citi-icons-head {
+    margin-top: 0;
   }
 
   .case-study--citi .citi-onboard {
@@ -6457,7 +6479,11 @@ body.side-nav-theme-light #side-nav .side-nav__link.is-active .side-nav__label {
   }
 
   .case-study--citi .citi-icons {
-    column-gap: 0;
-    border-radius: 16px;
+    display: none;
+  }
+
+  .case-study--citi .citi-icons-mobile {
+    display: block;
+    margin-top: 0;
   }
 }
