@@ -6262,6 +6262,12 @@ body.side-nav-theme-light #side-nav .side-nav__link.is-active .side-nav__label {
   top: -49.33%;
 }
 
+.case-study--citi .citi-icons-desktop {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .case-study--citi .citi-icons-mobile {
   display: none;
   width: 100%;
@@ -6272,7 +6278,7 @@ body.side-nav-theme-light #side-nav .side-nav__link.is-active .side-nav__label {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: grid;
+  display: none;
   grid-template-columns: repeat(5, minmax(0, 1fr));
   column-gap: 25px;
   row-gap: 0;
@@ -6479,6 +6485,10 @@ body.side-nav-theme-light #side-nav .side-nav__link.is-active .side-nav__label {
   }
 
   .case-study--citi .citi-icons {
+    display: none;
+  }
+
+  .case-study--citi .citi-icons-desktop {
     display: none;
   }
 
